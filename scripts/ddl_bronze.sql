@@ -9,6 +9,7 @@ Script Purpose:
 ===============================================================================
 */
 
+-- To create the table from scratch (U = User Defined Table)
 IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL
     DROP TABLE bronze.crm_cust_info;
 GO
@@ -24,7 +25,6 @@ CREATE TABLE bronze.crm_cust_info (
 );
 GO
 
--- To create the table from scratch(U = User Defined Table)
 IF OBJECT_ID('bronze.crm_prd_info', 'U') IS NOT NULL
     DROP TABLE bronze.crm_prd_info;
 GO
