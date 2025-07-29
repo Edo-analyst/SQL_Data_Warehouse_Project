@@ -20,13 +20,6 @@ colSums(is.na(cust_info))
 cust_info %>% 
   filter(is.na(cst_id))
 
-# Keep most recent ones (no index)
-recent <- cust_info %>%
-  filter(cst_id %in% duplicates$cst_id, !is.na(cst_id)) %>%
-  group_by(cst_id) %>% 
-  filter(cst_create_date == max(cst_create_date)) %>% 
-  ungroup()
-
 # Keep most recent ones (index)
 cust_info_clean <-
   cust_info %>%
