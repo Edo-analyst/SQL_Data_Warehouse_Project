@@ -20,6 +20,12 @@ colSums(is.na(cust_info))
 cust_info %>% 
   filter(is.na(cst_id))
 
+# Keep most recent ones (no index)
+cust_info_clean <- 
+  cust_info %>% 
+    arrange(cst_id, desc(cst_create_date)) %>% 
+    filter(row_number() == 1, .by =cst_id) %>% nrow()
+
 # Keep most recent ones (index)
 cust_info_clean <-
   cust_info %>%
