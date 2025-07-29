@@ -25,6 +25,11 @@ cust_info_clean <-
   cust_info %>% 
     arrange(cst_id, desc(cst_create_date)) %>% 
     filter(row_number() == 1, .by =cst_id) %>% nrow()
+# or
+cust_info_clean <-  
+  cust_info %>% 
+    slice_max(order_by = cst_create_date, n = 1, by = cst_id, with_ties = F)
+
 
 # Keep most recent ones (index)
 cust_info_clean <-
