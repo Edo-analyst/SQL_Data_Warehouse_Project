@@ -20,5 +20,5 @@ This project focuses on:
 
 The data architecture for this project is:
 
-
 ![Diagramma architettura](images/Data_Architecture.png)
+
