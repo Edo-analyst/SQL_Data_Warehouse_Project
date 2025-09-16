@@ -19,3 +19,4 @@ This project focuses on:
 ## 🧱 Data Architecture
 
 The data architecture for this project is:
+![Diagramma architettura](images/architecture_diagram.png)
