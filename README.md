@@ -23,5 +23,6 @@ The data architecture is designed around the Medallion Architecture framework, o
 
 3. **Gold Layer**: Stores curated, business-ready datasets organized into star schema models, optimized for reporting and analytical queries.
 
+## 📂 Datasets
 
 
