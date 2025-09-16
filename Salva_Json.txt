@@ -1,0 +1,54 @@
+function doGet(e) {
+  const user = e.parameter.user;
+  const pwd = e.parameter.password;
+
+  // Credenziali di accesso
+  const USERNAME = "Me";
+  const PASSWORD = "RegioneVeneto";
+
+  if (user !== USERNAME || pwd !== PASSWORD) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ error: "Accesso negato" }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+
+  const SPREADSHEET_ID = "1hZ8Zh-t61feoTtyi5xZvp2yX75qHuN4CGK5zMmYqAqI"; // ID del Google Sheet
+  const SHEET_NAME = "Dati da importare"; // nome del foglio da cui prendere i dati
+
+  try {
+    const spreadsheet = SpreadsheetApp.openById(SPREADSHEET_ID);
+    const sheet = spreadsheet.getSheetByName(SHEET_NAME);
+
+    if (!sheet) {
+      return ContentService
+        .createTextOutput(JSON.stringify({ error: "Foglio specificato non trovato" }))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+
+    const data = sheet.getDataRange().getValues();
+    if (data.length < 2) {
+      return ContentService
+        .createTextOutput(JSON.stringify({ error: "Nessun dato disponibile" }))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+
+    // Prima riga come header
+    const headers = data.shift();
+    const jsonArray = data.map(row => {
+      const obj = {};
+      headers.forEach((header, i) => {
+        obj[header] = row[i];
+      });
+      return obj;
+    });
+
+    return ContentService
+      .createTextOutput(JSON.stringify(jsonArray))
+      .setMimeType(ContentService.MimeType.JSON);
+
+  } catch (err) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ error: "Errore: " + err.message }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
