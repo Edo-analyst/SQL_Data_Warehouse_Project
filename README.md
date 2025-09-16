@@ -24,7 +24,12 @@ The data architecture is designed around the Medallion Architecture framework, o
 3. **Gold Layer**: Stores curated, business-ready datasets organized into star schema models, optimized for reporting and analytical queries.
 
 ## 📂 Datasets
-CRM
+🔹CRM: Customer Relationship Management
+- **cust_info.csv**: customer informations
+- **prd_info.csv**: product informations
+- **sales_details.csv**: sales informations
 
-ERP
-
+🔹ERP: Enterprise Resource Planning
+- **CUST_AZ12.csv**: extra customer informations → birth date 
+- **LOC_A101.csv**: extra customer informations → country
+- **PX_CAT_G1V2.csv**: extra procuct informations → category, subcategory, maintenance
