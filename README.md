@@ -21,4 +21,4 @@ This project focuses on:
 The data architecture for this project is:
 
 
-![Diagramma architettura](images/Data_Warehouse_Schema.png)
+![Diagramma architettura](images/Data_Architecture.png)
