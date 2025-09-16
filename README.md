@@ -16,3 +16,6 @@ This project focuses on:
 7. **Analytics & Reporting**:  
    Creating SQL-based reports and dashboards to deliver actionable insights and support data-driven decision-making.
 
+## 🧱 Data Architecture
+
+The data architecture for this project is:
