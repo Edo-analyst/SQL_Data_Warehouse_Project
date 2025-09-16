@@ -4,22 +4,24 @@
 
 This project focuses on:
 
-1. **Data Architecture**:   
-   Building a scalable and organized data warehouse using the Medallion Architecture: Bronze, Silver, and Gold layers.
+1. **Data Architecture**: Building a scalable and organized data warehouse using the Medallion Architecture.
 
-3. **ETL Pipelines**:  
-   Extracting, transforming, and loading data from source systems into the warehouse.
+2. **ETL Pipelines**:  Extracting, transforming, and loading data from source systems into the warehouse.
 
-5. **Data Modeling**:  
-   Building fact and dimension tables structured optimized for analytical queries.
+3. **Data Modeling**: Building fact and dimension tables structured optimized for analytical queries.
 
-7. **Analytics & Reporting**:  
-   Creating SQL-based reports and dashboards to deliver actionable insights and support data-driven decision-making.
+4. **Analytics & Reporting**: Creating SQL-based reports and dashboards to deliver actionable insights. 
 
 ## 🧱 Data Architecture
-
-The data architecture for this project is:
+The data architecture is designed around the Medallion Architecture framework, organized into Bronze, Silver, and Gold layers.
 
 ![Data Architecture](images/Data_Architecture.png)
+
+1. **Bronze Layer**: Stores raw, unprocessed data directly ingested from source systems. Data is loaded from CSV files into a SQL Server database.
+
+2. **Silver Layer**: Applies data cleaning, standardization, and normalization to ensure data quality and consistency, making it suitable for analysis.
+
+3. **Gold Layer**: Stores curated, business-ready datasets organized into star schema models, optimized for reporting and analytical queries.
+
 
 
