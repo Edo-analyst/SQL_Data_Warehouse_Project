@@ -36,6 +36,16 @@ The data architecture is designed around the Medallion Architecture framework, o
 
 ## 📊 Analytics & Reporting
 
+### Analysis using SQL
+The **Gold Layer** served as the foundation for analysis, enabling:  
+1. Exploration of customer behavior  
+2. Evaluation of product performance  
+3. Identification of sales trends over time  
+4.  Segmentation and market share insights  
+5.  Development of business-oriented reports
+
+### Data Visualization using Power BI dashboard
+
 
 
 
