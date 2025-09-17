@@ -1,4 +1,4 @@
-# 🗃️ SQL_Data_Warehouse_Project
+# 🗃️ Data Warehouse Creation (SQL)
 
 ## 📖 Overview
 
