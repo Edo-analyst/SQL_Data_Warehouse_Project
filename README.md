@@ -1,4 +1,4 @@
-# 🗃️ Data Warehouse Creation (SQL)
+# 🗃️ Data Warehouse Creation
 
 ## 📖 Overview
 
