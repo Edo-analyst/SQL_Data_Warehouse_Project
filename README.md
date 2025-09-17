@@ -15,7 +15,7 @@ This project focuses on:
 ## 🧱 Data Architecture
 The data architecture is designed around the Medallion Architecture framework, organized into Bronze, Silver, and Gold layers.
 
-![Data Architecture](images/Data_Architecture.png)
+![Data Architecture](images/Data_Architecture2.png)
 
 1. **Bronze Layer**: Stores raw, unprocessed data directly ingested from source systems. Data is loaded from CSV files into a SQL Server database.
 
