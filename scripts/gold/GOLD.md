@@ -1,4 +1,4 @@
-# Gold Layer Views Setup
+# 🟨 Gold Layer Views Setup
 
 ## Overview
 This SQL script creates views for the **Gold** layer in the data warehouse.  
