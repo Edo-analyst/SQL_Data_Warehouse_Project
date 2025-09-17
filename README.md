@@ -34,8 +34,6 @@ The data architecture is designed around the Medallion Architecture framework, o
 - **LOC_A101.csv**: extra customer informations → country
 - **PX_CAT_G1V2.csv**: extra procuct informations → category, subcategory, maintenance
 
-## 📊 Results
-
 
 
 
