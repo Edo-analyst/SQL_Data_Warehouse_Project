@@ -10,8 +10,7 @@ Script Purpose:
 		2) Inserts transformed and cleansed data from Bronze into Silver tables.
 		
 Parameters:
-    None. 
-	  This stored procedure does not accept any parameters or return any values.
+    None: This stored procedure does not accept any parameters or return any values.
 
 Usage Example:
     EXEC Silver.load_silver;
