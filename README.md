@@ -44,7 +44,7 @@ The **Gold Layer** served as the foundation for analysis, enabling:
 4.  Segmentation and market share insights  
 5.  Development of business-oriented reports
 
-### Data Visualization using Power BI dashboard
+### Data Visualization using Power BI 
 
 
 
