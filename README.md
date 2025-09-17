@@ -19,9 +19,9 @@ The data architecture is designed around the Medallion Architecture framework, o
 
 1. **Bronze Layer**: Stores raw, unprocessed data directly ingested from source systems. Data is loaded from CSV files into a SQL Server database. ([more details](scripts/bronze/BRONZE.md))
 
-2. **Silver Layer**: Applies data cleaning, standardization, and normalization to ensure data quality and consistency, making it suitable for analysis.
+2. **Silver Layer**: Applies data cleaning, standardization, and normalization to ensure data quality and consistency, making it suitable for analysis. ([more details](scripts/silver/SILVER.md))
 
-3. **Gold Layer**: Stores curated, business-ready datasets organized into star schema models, optimized for reporting and analytical queries.
+3. **Gold Layer**: Stores curated, business-ready datasets organized into star schema models, optimized for reporting and analytical queries. ([more details](scripts/gold/GOLD.md))
 
 ## 📂 Datasets
 🔹CRM: Customer Relationship Management
