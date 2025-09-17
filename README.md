@@ -4,7 +4,7 @@
 
 This project focuses on:
 
-1. **Data Architecture**: Building a scalable and organized data warehouse using the Medallion Architecture.
+1. **Data Architecture**: Building a scalable and organized data warehouse using the **Medallion Architecture**.
 
 2. **ETL Pipelines**:  Extracting, transforming, and loading data from source systems into the warehouse.
 
