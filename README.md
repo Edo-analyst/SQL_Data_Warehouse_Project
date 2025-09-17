@@ -1,4 +1,4 @@
-# 🗃️ Data Warehouse Creation
+# 🗃️ Sales Insights: Customers & Products Analysis
 
 ## 📖 Overview
 
@@ -33,6 +33,8 @@ The data architecture is designed around the Medallion Architecture framework, o
 - **CUST_AZ12.csv**: extra customer informations → birth date 
 - **LOC_A101.csv**: extra customer informations → country
 - **PX_CAT_G1V2.csv**: extra procuct informations → category, subcategory, maintenance
+
+## 📊 Analytics & Reporting
 
 
 
