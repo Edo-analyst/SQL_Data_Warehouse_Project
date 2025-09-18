@@ -27,7 +27,7 @@ The data architecture is designed around the Medallion Architecture framework, o
 🔹CRM: Customer Relationship Management
 - **cust_info.csv**: customer informations
 - **prd_info.csv**: product informations
-- **sales_details.csv**: sales informations
+- **sales_details.csv**: transactional Records about Sales & Orders
 
 🔹ERP: Enterprise Resource Planning
 - **CUST_AZ12.csv**: extra customer informations → birth date 
