@@ -93,7 +93,7 @@ TRUNCATE TABLE gold.dim_products;
 GO
 
 BULK INSERT gold.dim_products
-FROM 'C:\Desktop\SQL\data_analytics_project\gold.dim_products.csv'
+FROM 'C:\Desktop\SQL\data_analytics_project\datasets\gold.dim_products.csv'
 WITH (
 	FIRSTROW = 2,
 	FIELDTERMINATOR = ',',
@@ -112,6 +112,7 @@ WITH (
 	TABLOCK
 );
 GO
+
 
 
 
