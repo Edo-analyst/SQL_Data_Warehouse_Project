@@ -37,7 +37,7 @@ The data architecture is designed around the Medallion Architecture framework, o
 ## 📊 Analytics & Reporting
 
 ### Analysis using SQL ([click here to view code](scripts/_data_analysis))
-The **Gold Layer** served as the foundation for analysis, enabling:  
+The **Gold Layer** served as the foundation for analysis, enabling: ([gold layer info](scripts/Gold_Info))
 1. Exploration of customer behavior  
 2. Evaluation of product performance  
 3. Identification of sales trends over time  
