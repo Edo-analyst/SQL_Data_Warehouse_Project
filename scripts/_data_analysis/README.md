@@ -1,5 +1,5 @@
 ## Description of SQL Scripts
-
+  
 | Script                          | Purpose                                                                                      |
 | ------------------------------- | -------------------------------------------------------------------------------------------- |
 | `0_init_database.sql`            | Initialize and prepare the database schema with sample sales data.                          |
