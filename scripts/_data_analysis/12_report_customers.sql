@@ -24,7 +24,7 @@ Highlights:
 -- =============================================================================
 -- Create Report: gold.report_customers
 -- =============================================================================
-IF OBJECT_ID('gold.report_customers', 'V') IS NOT NULL
+IF OBJECT_ID('gold.report_customers', 'V') IS NOT NULL    --V = View
     DROP VIEW gold.report_customers;
 GO
 
@@ -103,4 +103,5 @@ END AS avg_order_value,
 CASE WHEN lifespan = 0 THEN total_sales
      ELSE total_sales / lifespan
 END AS avg_monthly_spend
+
 FROM customer_aggregation
