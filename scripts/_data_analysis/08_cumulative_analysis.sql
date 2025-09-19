@@ -19,12 +19,13 @@ SELECT
 FROM
 (
     SELECT 
-        DATETRUNC(year, order_date) AS order_date,
+        DATETRUNC(month, order_date) AS order_date,
         SUM(sales_amount) AS total_sales,
         AVG(price) AS avg_price
     FROM gold.fact_sales
     WHERE order_date IS NOT NULL
-    GROUP BY DATETRUNC(year, order_date)
+    GROUP BY DATETRUNC(month, order_date)
 ) t
+
 
 
