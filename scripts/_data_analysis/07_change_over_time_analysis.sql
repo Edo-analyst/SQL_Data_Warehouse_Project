@@ -10,7 +10,6 @@ Purpose:
 */
 
 -- Analyse sales performance over time
--- Quick Date Functions
 SELECT
     YEAR(order_date) AS order_year,
     MONTH(order_date) AS order_month,
@@ -43,4 +42,5 @@ FROM gold.fact_sales
 WHERE order_date IS NOT NULL
 GROUP BY FORMAT(order_date, 'yyyy-MMM')
 ORDER BY FORMAT(order_date, 'yyyy-MMM');
+
 
