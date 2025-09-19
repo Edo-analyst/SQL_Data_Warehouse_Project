@@ -9,8 +9,8 @@ Purpose:
 ===============================================================================
 */
 
--- Calculate the total sales per month 
--- and the running total of sales over time 
+-- Total sales per month 
+-- and running total of sales over time 
 SELECT
 	order_date,
 	total_sales,
@@ -26,4 +26,5 @@ FROM
     WHERE order_date IS NOT NULL
     GROUP BY DATETRUNC(year, order_date)
 ) t
+
 
