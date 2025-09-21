@@ -47,7 +47,7 @@ The **Gold Layer** served as the foundation for analysis, enabling: ([gold layer
 
 ### Data Visualization using Power BI dashboard
 
-
+![Data Architecture](docs/Sales Dashboard.png)
 
 
 
